@@ -1,28 +1,28 @@
-.App {
+.bingo {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+}
+
+.bingo-main {
+  padding-top: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.bingo-main p {
+  font-size: 8.0em;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.App-intro {
-  font-size: large;
+.next {
+  width: 140px;
+  height: 140px;
+  color: #fff;
+  font-size: 1.8em;
+  background: #4682b4;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
