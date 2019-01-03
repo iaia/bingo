@@ -1,16 +1,24 @@
 import * as React from 'react';
 import './History.css';
 
-class History extends React.Component {
+interface IHistoryProps {
+  histories: number[];
+}
+
+class History extends React.Component<IHistoryProps, any> {
+  constructor(props: IHistoryProps) {
+    super(props);
+  }
+
   public render() {
+    const historiesHtml = this.props.histories.map((history, index) =>
+      <div key={index} className="history-item">
+        <p>{history}</p>
+      </div>
+    );
     return (
       <div className="bingo-history">
-        <div className="history-item">
-          <p>39</p>
-        </div>
-        <div className="history-item">
-          <p>09</p>
-        </div>
+        {historiesHtml}
       </div>
     );
   }
